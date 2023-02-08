@@ -3,12 +3,22 @@ for (let i=0; i < numbers.length; i++) {
     numbers[i].addEventListener('click',printToDisplay)
 };
 const display = document.getElementById('display')
-
 let displayValue = '';
 
 function printToDisplay() {
     displayValue += this.dataset.number;
     display.innerText = displayValue;
+}
+
+const operators = document.querySelectorAll('[data-operator]');
+for (let i=0; i < operators.length; i++) {
+    operators[i].addEventListener('click',selectOperator)
+};
+
+let operator = '';
+
+function selectOperator() {
+    operator = this.dataset.operator;
 }
 
 function add(number1,number2) {
