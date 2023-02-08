@@ -1,0 +1,72 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Major Mono Display', monospace;
+    margin: 0;
+    background-color: black;
+    font-size: xxx-large;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    min-width: 30vw;
+    max-width: 40vw;
+    margin: 0 auto;
+    background-color: rgb(173, 171, 167);
+    border-style: outset;
+    border-width: 0.1em;
+}
+
+.display {
+    background-color: rgb(27, 2, 32);
+    margin: 1em;
+    padding: .2em;
+    color: chartreuse;
+    display: flex;
+    flex-direction: row-reverse;
+    border-style: inset;
+}
+
+.button-container {
+    display:flex;
+    align-content: stretch;
+    margin: 1em;
+    justify-content: space-evenly;
+}
+
+.number-buttons {
+    display:grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 0.5em;
+}
+
+.operator-buttons {
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: .3em;
+}
+
+button {
+    font-size: xxx-large;
+    min-width: 2em;
+    border-style:ridge;
+    border-radius: 6%;
+}
+
+button.clear-button {
+    background-color: red;
+}
+
+.operator-buttons > button {
+    background-color: darkgoldenrod;
+}
+
+.signature {
+    display: flex;
+    font-size: x-large;
+    justify-content: center;
+}
