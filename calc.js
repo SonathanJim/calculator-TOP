@@ -1,3 +1,16 @@
+const numbers = document.querySelectorAll('[data-number]');
+for (let i=0; i < numbers.length; i++) {
+    numbers[i].addEventListener('click',printToDisplay)
+};
+const display = document.getElementById('display')
+
+let displayValue = '';
+
+function printToDisplay() {
+    displayValue += this.dataset.number;
+    display.innerText = displayValue;
+}
+
 function add(number1,number2) {
     let sum = number1 + number2;
     return sum;

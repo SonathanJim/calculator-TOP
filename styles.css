@@ -13,8 +13,8 @@ body {
     display: flex;
     flex-direction: column;
     height: 100vh;
-    min-width: 30vw;
-    max-width: 40vw;
+    min-width: 460px;
+    min-height: 100vh;
     margin: 0 auto;
     background-color: rgb(173, 171, 167);
     border-style: outset;
@@ -52,9 +52,14 @@ body {
 
 button {
     font-size: xxx-large;
-    min-width: 2em;
+    min-width: 1.5em;
     border-style:ridge;
     border-radius: 6%;
+    cursor: pointer;
+}
+
+button:hover {
+    border: 2px solid red;
 }
 
 button.clear-button {
